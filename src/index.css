@@ -46,3 +46,9 @@ h6 {
 #root {
   isolation: isolate;
 }
+
+/* temporary - remove it later */
+a {
+  text-decoration: none;
+}
+/*  */
