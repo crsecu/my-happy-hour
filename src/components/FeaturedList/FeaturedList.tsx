@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./FeaturedList.module.css";
 import RestaurantCard from "../RestaurantCard/RestaurantCard";
 import { Place } from "../../utils/Place";
@@ -15,9 +16,10 @@ function FeaturedList({ places }: FeaturedListProps): React.JSX.Element {
       <h2 id="featured-heading">Featured Spots</h2>
       <ul>
         {places.map((place) => (
-          <li>
-            {" "}
-            <RestaurantCard placeData={place} key={place.id} />
+          <li key={place.id}>
+            <Link to={`/placeDetail/${place.name}`}>
+              <RestaurantCard placeData={place} />
+            </Link>
           </li>
         ))}
       </ul>

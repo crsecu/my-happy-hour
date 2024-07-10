@@ -7,13 +7,13 @@ interface RestaurantCardProps {
 
 function RestaurantCard({ placeData }: RestaurantCardProps): React.JSX.Element {
   return (
-    <a href="#" className={styles.restaurantCard}>
+    <article className={styles.restaurantCard}>
       <h3>{placeData.name}</h3>
       <img src="/placeholder-img.png" />
       <span>{placeData.city}</span>
       <span>{placeData.state}</span>
       <span className={styles.category}>Pizza</span>
-    </a>
+    </article>
   );
 }
 

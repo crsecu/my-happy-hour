@@ -6,6 +6,7 @@ import Layout from "./Pages/Layout";
 import Homepage from "./Pages/Homepage";
 import Faq from "./components/Faq/Faq";
 import Login from "./components/Login/Login";
+import PlaceDetail from "./Pages/PlaceDetail";
 
 const URL = "https://api.openbrewerydb.org/v1/breweries?per_page=6";
 
@@ -35,6 +36,7 @@ function App() {
           <Route index element={<Homepage places={places} />} />
           <Route path="faq" element={<Faq />} />
           <Route path="login" element={<Login />} />
+          <Route path="/placeDetail/:name" element={<PlaceDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>
