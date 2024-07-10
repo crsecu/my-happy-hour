@@ -1,16 +1,18 @@
 import styles from "./Homepage.module.css";
 import Nav from "../components/Nav/Nav";
+import FeaturedList from "../components/FeaturedList/FeaturedList";
 import RestaurantCard from "../components/RestaurantCard/RestaurantCard";
+import { Place } from "../utils/Place";
 
-interface HomepageProps {}
+interface HomepageProps {
+  places: Place[];
+}
 
-function Homepage(props: HomepageProps): React.JSX.Element {
+function Homepage({ places }: HomepageProps): React.JSX.Element {
   return (
     <main>
-      <section>
-        <h2>Main content goes here</h2>
-        <RestaurantCard />
-      </section>
+      <h2>Main content goes here</h2>
+      <FeaturedList places={places} />
     </main>
   );
 }

@@ -1,0 +1,13 @@
+/* Temporary styling */
+.featuredSection ul {
+  display: flex;
+  gap: 12px;
+}
+
+.featuredSection h2 {
+  text-align: center;
+}
+
+.featuredSection ul {
+  list-style-type: none;
+}

@@ -12,8 +12,12 @@
   width: 100px;
 }
 
-.restaurantCard span {
+.category {
   margin-top: 10px;
   border: 1px solid black;
   background-color: aliceblue;
+}
+
+.restaurantCard h3 {
+  font-size: 1rem;
 }
