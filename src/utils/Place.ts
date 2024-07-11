@@ -17,3 +17,22 @@ export interface Place {
   state: string;
   street: string;
 }
+
+export const defaultPlace: Place = {
+  id: "",
+  name: "",
+  brewery_type: "",
+  address_1: "",
+  address_2: null,
+  address_3: null,
+  city: "",
+  state_province: "",
+  postal_code: "",
+  country: "",
+  longitude: null,
+  latitude: null,
+  phone: "",
+  website_url: "",
+  state: "",
+  street: "",
+};

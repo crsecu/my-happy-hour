@@ -8,7 +8,9 @@ import Faq from "./components/Faq/Faq";
 import Login from "./components/Login/Login";
 import PlaceDetail from "./Pages/PlaceDetail";
 
-const URL = "https://api.openbrewerydb.org/v1/breweries?per_page=6";
+// const URL = "https://api.openbrewerydb.org/v1/breweries?per_page=10";
+const URL =
+  "https://api.openbrewerydb.org/v1/breweries?by_city=durham&per_page=3";
 
 function App() {
   const [places, setPlaces] = useState<Place[]>([]);
@@ -36,7 +38,8 @@ function App() {
           <Route index element={<Homepage places={places} />} />
           <Route path="faq" element={<Faq />} />
           <Route path="login" element={<Login />} />
-          <Route path="/placeDetail/:name" element={<PlaceDetail />} />
+
+          <Route path="placeDetail/:id/:slug" element={<PlaceDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>
